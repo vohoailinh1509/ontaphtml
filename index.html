@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Thiết kế Web - CNTT - CKC</title>
+		<!-- jQuery UI-->
+		<link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">
+		<!-- Font Awesome Icons -->
+		<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+		<!-- Theme style -->
+		<link rel="stylesheet" href="dist/css/adminlte.min.css">
+		<!-- CodeMirror -->
+		<link rel="stylesheet" href="plugins/codemirror/codemirror.css">
+		<link rel="stylesheet" href="plugins/codemirror/addon/fold/foldgutter.css">
+		<link rel="stylesheet" href="plugins/codemirror/theme/mdn-like.css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body class="hold-transition layout-fixed layout-navbar-fixed">
+	<div class="wrapper">
+		<!-- Navbar -->
+		<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+			<!-- Left navbar links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+				</li>
+			</ul>
+			<ul id="my-breadcrumb" class="d-flex m-1 p-0">
+			</ul>
+			<!-- Right navbar links -->
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" data-widget="fullscreen" href="#" role="button">
+						<i class="fas fa-expand-arrows-alt"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- /.navbar -->
+		<!-- Main Sidebar Container -->
+		<aside class="main-sidebar sidebar-light-primary elevation-2">
+			<!-- Brand Logo -->
+			<a href="http://cntt.caothang.edu.vn/" class="brand-link">
+				<img src="img/logo.png" alt="IT CKC" class="brand-image img-circle elevation-3">
+				<span class="brand-text font-weight-bold">CNTT - CKC</span>
+			</a>
+			<!-- Sidebar -->
+			<div class="sidebar ">
+				<!-- Sidebar user panel (optional) -->
+				<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+					<div class="info font-weight-bold">
+						Thiết kế Web
+					</div>
+				</div>
+				<!-- Sidebar Menu -->
+				<nav class="mt-2">
+					<ul id="nav-main" class="nav nav-pills nav-sidebar nav-compact nav-child-indent flex-column" data-widget="treeview" role="menu" data-accordion="false">
+					</ul>
+				</nav>
+				<!-- /.sidebar-menu -->
+			</div>
+			<!-- /.sidebar -->
+		</aside>
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<div class="content-header">
+				<div class="container">
+					<div class="row mb-2">
+						<div class="col-sm-12">
+							<h1 class="m-0 text-center text-uppercase">Thiết kế web</h1>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div><!-- /.container-fluid -->
+			</div>
+			<!-- /.content-header -->
+			<!-- Main content -->
+			<div class="content">
+				<div class="container-fluid">
+					<ul id="main-heading" class="heading" data-start-at="1">
+						<!--HTML-->
+						<li>
+							<p>Hypertext markup language (HTML)</p>
+							<ul class="heading">
+								<!--Website-->
+								<li>
+									<p>Website</p>
+									<figure>
+										<img src="img/HTTP.png" alt="HTTP.png">
+										<figcaption>
+											Cách hoạt động của website
+										</figcaption>
+									</figure>
+									<figure>
+										<img src="img/url.png" alt="HTTP_Steps.png">
+										<figcaption>
+											Các thành phần của URL
+										</figcaption>
+									</figure>
+								</li>
+								<!--Cấu trúc tập tin HTML-->
+								<li>
+									<p>Cấu trúc tập tin HTML</p>
+									<div  class='code-group'>
+										<div class="code-highlight language-css line-numbers d-none">
+											body{height:200px;}
+										</div>
+										<div class="code-highlight language-html line-numbers keep-content">
+											<script type="text/plain">
+												<!doctype html> <!--khai báo kiểu tập tin html-->
+												<html>
+												<!--Thẻ head: khai báo các thông tin về tập tin HTML này, không hiển thị cho người dùng, vd: tác giả, thể loại, tóm tắt, ...-->
+												<head>
+												<!--Bảng mã, thường dùng nhất là utf-8-->
+												<meta charset="utf-8"&#47;>
+												<!--Hiển thị trên thanh tiêu đề của cửa sổ trình duyệt, bookmark, lưu file,...-->
+												<title>Tiêu đề<&#47;title> 
+												<&#47;head>
+												<!--Thẻ body: nội dung tập tin-->
+												<body> 
+												<p>Hello world!<&#47;p>
+												<img src="img/hello.png" alt="hello"&#47;>
+												<&#47;body>
+												<&#47;html>
+											</script>
+										</div>
+									</div>
+									<p>Trong tập tin HTML, tất cả nội dung đều được đặt trong các thẻ. Thẻ là đơn vị cấu tạo của HTML. Có nhiều cách phân loại thẻ, nhưng để tìm hiểu về cú pháp của thẻ thì đầu tiên cần phải phân biệt thẻ rỗng và thẻ không rỗng.</p>
+									<ul>
+										<li>
+											<p>Thẻ không rỗng có thể chứa nội dung văn bản hoặc chứa những thẻ khác (như trong ví dụ trên, thẻ p là thẻ không rỗng). Thẻ không rỗng bắt buộc phải đủ cặp thẻ mở và thẻ đóng, cú pháp như sau:</p>
+											<div class='code-group'>
+												<div class="code-highlight language-html line-numbers ">
+													<!--thẻ mở-->
+													<tên-thẻ thuộc-tính-1="giá trị" thuộc-tính-2="giá trị">
+														<!--text hoặc các thẻ khác-->
+														...
+														<!--thẻ đóng, chú ý dấu /-->
+													</tên-thẻ>  
+													<tên-thẻ thuộc-tính-3 thuộc-tính-4="thuộc-tính-4">
+														<!-- Một số thuộc tính, gọi là thuộc tính boolean, chỉ cần có tên, không cần giá trị-->
+														<!-- Trong XHTML thì bắt buộc thuộc tính boolean có giá trị là chính tên của thuộc tính-->
+													</tên-thẻ>  
+												</div>
+											</div>
+										</li>
+										<li>
+											<p>Thẻ rỗng không chứa nội dung gì (như trong ví dụ trên, thẻ img là thẻ rỗng) nên không có thẻ đóng. Cú pháp thẻ rỗng:</p>
+											<div class='code-group'>
+												<div class="code-highlight language-html line-numbers">
+													<script type="text/plain">
+														<tên-thẻ thuộc-tính-1="giá trị" thuộc-tính-2="giá trị"/>
+														<!-- Trong HTML, dấu / ở cuối thẻ rỗng có thể có hoặc không, trong XHTML thì bắt buộc có-->
+													</script>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<p>Ngoài ra còn có thể phân loại thẻ theo loại thẻ văn bản/layout, theo dạng hiển thị thẻ block/inline,... </p>
+									
+									<div class="callout callout-warning">
+										<h5>Lưu ý về khoảng trắng trong văn bản:</h5>
+										<p>Trong nội dung của phần lớn thẻ HTML (trừ thẻ &lt;pre&gt; và các trường hợp định dạng lại bằng CSS) thì tất cả các khoảng trắng dư thừa đều được rút gọn theo quy tắc: một hoặc nhiều khoảng trắng liên tục sẽ được chuyển thành 1 ký tự khảng cách (space). Các ký tự sau được tính là khoảng trắng:</p><ul>
+											<li>Ký tự khoảng cách (space)</li>
+											<li>Ký tự tab (\t, ASCII: 9)</li>
+											<li>Ký tự ngắt dòng (line feed, \n, ASCII: 10)</li>
+											<li>Ký tự về đầu dòng (carriage return, \r, ASCII: 13)</li>
+										</ul>
+										<div class='code-group'>
+											<div class="code-highlight language-html line-numbers keep-content">
+												a     <!--spaces-->        b					<!--tabs-->						c
+												d								
+												
+												<!--line feed + carriage return-->							
+												
+												e	 	   					 	  <!--tabs + spaces-->  	 	 	 	 	 	 	f
+											</div>
+										</div>
+									</div>
+									<p>VD một số thẻ văn bản</p>
+									<div class='code-group'>
+										<div class="code-highlight language-html line-numbers keep-content">
+											<h1>Trường Cao đẳng Kỹ Thuật Cao Thắng</h1>
+											<h2>Khoa Công nghệ thông tin</h2>
+											<h3>Bộ môn Công nghệ Phần mềm</h3>
+											<!-- Thông thường chỉ nên dùng tới h3 vì với định dạng mặc định thì h4-h6 chữ rất nhỏ-->
+											<h4>Môn Thiết kế Web</h4>
+											<h5>Lớp CĐ TH 20C</h5>
+											<h6>Bài kiểm tra 1</h6>
+										</div>
+									</div>
+									<div class='code-group'>
+										<div class="code-highlight language-html line-numbers keep-content">
+											<p>3Cu + 8HNO<sub>3</sub> → 3Cu(NO<sub>3</sub>)<sub>2</sub> + 2NO + 4H<sub>2</sub>O</p>
+											<p>(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></p>
+										</div>
+									</div>			
+									<div class='code-group'>
+										<div class="code-highlight language-html line-numbers keep-content">
+											<i>nghiêng</i> <br>
+											<b>đậm</b> <br>
+											<i><b>nghiêng và đậm</b></i> <!--vd thẻ lồng nhau--><br>
+											<u>gạch chân</u><!--Không nên sử dụng vì dễ nhầm với đường link--><br>
+											<s>gạch ngang</s>
+										</div>
+									</div>				
+									<div class='code-group'>
+										<div class="code-highlight language-html line-numbers keep-content">
+											<ul>
+												<li>chó</li>
+												<li>mèo</li>
+												<li>gà</li>
+												<li>vịt</li>
+											</ul>
+											<ol>
+												<li>chó</li>
+												<li>mèo</li>
+												<li>gà</li>
+												<li>vịt</li>
+											</ol>
+										</div>
+									</div>
+									
+									<p>VD thẻ block/inline</p>
+									<div class='code-group'>
+										<div class="code-highlight language-html line-numbers keep-content">
+											<p>Hello world!</p>
+											<img src="img/hello.png" alt="hello" height="20"/>
+											<p>Bye world!</p>
+											
+											<span>Hello world!</span>
+											<img src="img/hello.png" alt="hello" height="20"/>
+											<span>Bye world!</span>
+										</div>
+									</div>
+									<div class="callout callout-warning">
+										<h5>Lưu ý:</h5>
+										<p>Nói chung thì thẻ inline chỉ được chứa thẻ inlne khác, không được chứa thẻ block, còn thẻ block có thể chứa cả thẻ block khác và thẻ inline.</p><p>Một số trình duyệt vẫn chấp nhận thẻ block nằm trong thẻ inline nhưng nên tránh vì sẽ khó định dạng hơn.</p>
+									</div>
+								</li>
+								<!--HTML entities-->
+								<li>
+									<p>HTML entities</p>                  
+									<p>Khi trình bày văn bản có chứa các ký tự như &lt; hoặc &gt;, trình duyệt có thể hiểu lầm thành các thẻ, do đó cần dùng các <a target="_blank" href="https://www.w3schools.com/charsets/ref_html_entities_4.asp">HTML entities</a> để hiển thị các ký tự này.</p>
+									<div class="callout callout-info">
+										<h5>Cú pháp</h5>
+										<p><code>&amp;entity_name;</code></p>
+										<p>hoặc</p>
+										<p><code>&amp;#entity_dec_number;</code></p>
+										<p>hoặc</p>
+										<p><code>&amp;#xentity_hex_number;</code></p>
+									</div>
+									<p>Một số HTML entities thường dùng</p>
+									<div class='code-group'>
+										<div class="code-highlight language-html line-numbers keep-content">
+											&lt; &gt; &amp; &nbsp; <!--Khoảng trắng đặc biệt, không ngắt dòng, và không bị rút gọn bớt-->
+											<p>So sánh:</p>
+											<b>text</b> và &lt;b&gt;text&lt;/b&gt;
+											<p>So sánh:</p>
+											&lt; và &amp;lt;										
+											<p>So sánh 2 dòng sau</p>
+											<p>A                          B</p>
+											<p>A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B</p>
+										</div>
+									</div>
+									<p>Thu nhỏ khung kết quả để thấy tác dụng ngăn ngắt dòng trong vd trên<img src="img/resize.png"></p>
+									<p>Tham khảo thêm các ký tự đặc biệt khác ít dùng hơn nhưng thường gặp trong các văn bản chuyên ngành (<a href="https://www.w3schools.com/charsets/ref_utf_currency.asp">đơn vị tiền tệ</a>, <a href="https://www.w3schools.com/charsets/ref_utf_math.asp">ký hiệu toán học</a>, <a href="https://www.w3schools.com/charsets/ref_utf_greek.asp">chữ cái Hy Lạp</a>,...)</p>
+								</li>
+								<!--Một số thẻ HTML thường dùng-->
+								<li>
+									<p>Một số thẻ HTML thường dùng</p>   
+									<div class="callout callout-warning">
+										<h5>Lưu ý về thuộc tính chung</h5>
+										<p>Tất cả thẻ HTML đều có các <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">thuộc tính chung</a> như id, class, style, title, ... Trong phần này chỉ trình bày những thuộc tính riêng cho từng thẻ</p>
+									</div> 
+									<ul class="heading">
+										<!--sapn, div-->
+										<li>
+											<p>Thẻ &lt;span&gt; và &lt;div&gt;</p>						
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">span</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">div</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_span.asp">sapn</a>, <a href="https://www.w3schools.com/tags/tag_div.asp">div</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Gom nhóm các thẻ khác lại, chủ yếu để định dạng bằng CSS. Điểm khác nhau là &lt;span&gt; là thẻ inline còn &lt;div&gt; là thẻ block. Trong HTML5 thì một số trường hợp nên dùng các thẻ ngữ nghĩa (&lt;nav&gt;, &lt;header&gt;, &lt;article&gt;, &lt;aside&gt;,... ) để thay thế </p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thẻ liên quan</h5>
+												<p>Thẻ &lt;div&gt; có thể chứa tất cả các thẻ khác (ngoại trừ &lt;html&gt;, &lt;head&gt;, &lt;body&gt; và những thẻ bắt buộc phải nằm trong một thẻ nhất định như &lt;meta&gt;, &lt;title&gt;, &lt;link&gt;, &lt;style&gt;, &lt;option&gt;, &lt;li&gt;, &lt;tr&gt;, &lt;td&gt;,  ...)</p>
+												<p>Thẻ &lt;div&gt; không được nằm trong các thẻ inline và một số thẻ block khác như thẻ &lt;p&gt;, &lt;ol&gt;, &lt;ul&gt;, ...</p>
+											</div>
+										</li>
+										<!--br-->
+										<li>
+											<p>Thẻ &lt;br&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br">br</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_br.asp">br</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Thường dùng để xuống dòng với các thẻ inline. Không cần thiết đối với thẻ block. Khi trình bày văn bản thì nên dùng thẻ &lt;p&gt; để xuống dòng thay vì thẻ &lt;br&gt;.</p>
+											</div>
+											<p>VD</p>
+											<div class='code-group'>
+												<div class="code-highlight language-html line-numbers keep-content">
+													<span>I have a pen<br>I have an apple</span>
+												</div>
+											</div>
+										</li>
+										<!--hr-->
+										<li>
+											<p>Thẻ &lt;hr&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr">hr</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_hr.asp">hr</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Tạo một đường kẻ ngang khi cần ngắt, chuyển ý trong văn bản. Nếu chỉ cần tạo đường kẻ trang trí mà không có sự chuyển ý thì nên dùng CSS.</p>
+											</div>
+											<p>VD</p>
+											<div class='code-group'>
+												<div class="code-highlight language-html line-numbers keep-content">
+													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
+													<hr>
+													<p>Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.</p>
+												</div>
+											</div>
+										</li>
+										<!--p-->
+										<li>
+											<p>Thẻ &lt;p&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">p</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_p.asp">p</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Chứa một đoạn văn bản.</p>
+											</div>
+											<div class="callout callout-danger">
+												<h5>Lưu ý:</h5>
+												<p>Nội dung thẻ &lt;p&gt; không được chứa thẻ block nào, nếu có thì trình duyệt sẽ tự đóng thẻ &lt;p&gt;, làm vỡ cấu trúc HTML của trang.	</p>
+											</div>
+											<p>VD</p>
+											<div class='code-group'>
+												<div class="code-highlight language-html line-numbers keep-content">
+													<!-- Thử chèn một thẻ <div> vào giữa thẻ <p> sau và quan sát kết quả bằng chức năng kiểm tra phần tử của Chrome</p>-->
+													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
+												</div>
+											</div>
+										</li>
+										<!--pre-->
+										<li>
+											<p>Thẻ &lt;pre&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">pre</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_pre.asp">pre</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Giữ lại các ký tự khoảng trắng dư thừa, tab, xuống dòng, ... như trong code HTML, và chuyển font chữ mặc định thành monospace (tất cả ký tự có chiều rộng bằng nhau).</p>
+											</div>
+											<p>VD</p>
+											<div class='code-group'>
+												<div class="code-highlight language-html line-numbers keep-content no-auto-indent">
+<!--So sánh thẻ <p> và thẻ <pre>-->
+<p> 
+         |
+        -+-
+         A
+        /=\               /\  /\    ___  _ __  _ __ __    __
+      i/ O \i            /  \/  \  / _ \| '__|| '__|\ \  / /
+      /=====\           / /\  /\ \|  __/| |   | |    \ \/ /
+      /  i  \           \ \ \/ / / \___/|_|   |_|     \  /
+    i/ O * O \i                                       / /
+    /=========\        __  __                        /_/    _
+    /  *   *  \        \ \/ /        /\  /\    __ _  ____  | |
+  i/ O   i   O \i       \  /   __   /  \/  \  / _` |/ ___\ |_|
+  /=============\       /  \  |__| / /\  /\ \| (_| |\___ \  _
+  /  O   i   O  \      /_/\_\      \ \ \/ / / \__,_|\____/ |_|
+i/ *   O   O   * \i
+/=================\
+       |___|
+</p>
+<pre>
+
+         |
+        -+-
+         A
+        /=\               /\  /\    ___  _ __  _ __ __    __
+      i/ O \i            /  \/  \  / _ \| '__|| '__|\ \  / /
+      /=====\           / /\  /\ \|  __/| |   | |    \ \/ /
+      /  i  \           \ \ \/ / / \___/|_|   |_|     \  /
+    i/ O * O \i                                       / /
+    /=========\        __  __                        /_/    _
+    /  *   *  \        \ \/ /        /\  /\    __ _  ____  | |
+  i/ O   i   O \i       \  /   __   /  \/  \  / _` |/ ___\ |_|
+  /=============\       /  \  |__| / /\  /\ \| (_| |\___ \  _
+  /  O   i   O  \      /_/\_\      \ \ \/ / / \__,_|\____/ |_|
+i/ *   O   O   * \i
+/=================\
+       |___|
+</pre>
+												</div>
+											</div>
+										</li>
+										<!--ul-->
+										<li>
+											<p>Thẻ &lt;ul&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">ul</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_ul.asp">ul</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Tạo một danh sách không thứ tự.</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thẻ liên quan:</h5>
+												<p>Chỉ chứa thẻ &lt;li&gt; và thẻ &lt;template&gt;, phải có chứa ít nhất 1 thẻ &lt;li&gt; thì mới hiển thị được.</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>
+												<p>Không có thuộc tính riêng (xem thêm thuộc tính <b>type</b>, tuy không hỗ trợ trong HTML5 nhưng một số mã nguồn cũ vẫn sử dụng).</p>
+												<p>Nếu muốn thay đổi biểu tượng dánh dấu trước mỗi dòng thì nên dùng CSS.</p>
+											</div>
+											<p>VD</p>
+											<div class='code-group'>
+												<div class="code-highlight language-html line-numbers keep-content">
+													<ul>
+														<li>HTML</li>
+														<li>CSS</li>
+														<li>JS</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<!--ol-->
+										<li>
+											<p>Thẻ &lt;ol&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">ol</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_ol.asp">ol</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Tạo một danh sách có thứ tự.</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thẻ liên quan:</h5>
+												<p>Chỉ chứa thẻ &lt;li&gt; và thẻ &lt;template&gt;, phải có chứa ít nhất 1 thẻ &lt;li&gt; thì mới hiển thị được.</p>
+											</div>
+											<p>VD</p>
+											<div class='code-group'>
+												<div class="code-highlight language-html line-numbers keep-content">
+													<ol>
+														<li>HTML</li>
+														<li>CSS</li>
+														<li>JS</li>
+													</ol>
+												</div>
+											</div>
+											
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>
+												<ul>
+													<li>
+														<p><b>reversed</b>: Đảo ngược thứ tự (thuộc tính boolean)</p>
+														<div class='code-group'>
+															<div class="code-highlight language-html line-numbers keep-content">
+																<!--Có thể rút gọn, chỉ ghi tên thuộc tính, không cần giá trị-->
+																<ol reversed="reversed">
+																	<li>HTML</li>
+																	<li>CSS</li>
+																	<li>JS</li>
+																</ol>
+															</div>
+														</div>
+													</li>
+													<li>
+														<p><b>start</b>: Số đầu tiên trong danh sách (số nguyên)</p>
+														<div class='code-group'>
+															<div class="code-highlight language-html line-numbers keep-content">
+																<ol reversed="reversed" start="-5">
+																	<li>HTML</li>
+																	<li>CSS</li>
+																	<li>JS</li>
+																</ol>
+															</div>
+														</div>
+													</li>
+													<li>
+														<p><b>type</b>: Cách đánh số, có các giá trị sau:</p>
+														<ul>
+															<li>
+																<p><b>1</b>: số (giá trị mặc định)</p>
+																<div class='code-group'>
+																	<div class="code-highlight language-html line-numbers keep-content">
+																		<ol type="1">
+																			<li>HTML</li>
+																			<li>CSS</li>
+																			<li>JS</li>
+																		</ol>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<p><b>I</b>: số La Mã hoa</p>
+																<div class='code-group'>
+																	<div class="code-highlight language-html line-numbers keep-content">
+																		<ol type="I">
+																			<li>HTML</li>
+																			<li>CSS</li>
+																			<li>JS</li>
+																		</ol>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<p><b>i</b>: số La Mã thường</p>
+																<div class='code-group'>
+																	<div class="code-highlight language-html line-numbers keep-content">
+																		<ol type="i">
+																			<li>HTML</li>
+																			<li>CSS</li>
+																			<li>JS</li>
+																		</ol>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<p><b>A</b>: chữ hoa</p>
+																<div class='code-group'>
+																	<div class="code-highlight language-html line-numbers keep-content">
+																		<ol type="A">
+																			<li>HTML</li>
+																			<li>CSS</li>
+																			<li>JS</li>
+																		</ol>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<p><b>a</b>: chữ thường</p>
+																<div class='code-group'>
+																	<div class="code-highlight language-html line-numbers keep-content">
+																		<ol type="a">
+																			<li>HTML</li>
+																			<li>CSS</li>
+																			<li>JS</li>
+																		</ol>
+																	</div>
+																</div>
+															</li>
+														</ul>
+														<div class="callout callout-danger">
+															<h5>Lưu ý:</h5>
+															<p>Các giá trị khác <b>1</b> chỉ có tác dụng cho các số dương. Các số âm sẽ tự động chuyển về -1, -2, -3,...</p>															
+														</div>
+													</li>
+												</ul>
+											</div>
+											
+										</li>
+										<!--li-->
+										<li>
+											<p>Thẻ &lt;li&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">li</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_li.asp">li</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Phẩn tử trong một danh sách</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thẻ liên quan:</h5>
+												<p>Phải chứa trong thẻ &lt;ul&gt; hoặc &lt;ol&gt;</p>
+												<p>Có thể chứa các thẻ &lt;ul&gt; hoặc &lt;ol&gt; khác để làm các danh sách lồng nhau</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>
+												<p><b>value</b>: đánh số khi dùng trong thẻ &lt;ol&gt;, các thẻ &lt;li&gt; theo sau sẽ tự động tăng theo giá trị này.</p>
+												<div class='code-group'>
+													<div class="code-highlight language-html line-numbers keep-content">
+														<ol>
+															<li>HTML</li>
+															<li value="5">CSS</li>
+															<li>JS</li>
+														</ol>
+													</div>
+												</div>										
+											</div>
+										</li>
+										<!--a-->
+										<li>
+											<p>Thẻ &lt;a&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">a</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_a.asp">a</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Tạo liên kết tới một địa chỉ URL</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>
+												<ul>
+													<li>
+														<p><b>href</b>: địa chỉ URL cần liên kết tới</p>
+													</li>
+													<li>
+														<p><b>target</b>: cách mở đường link</p>
+														<ul>
+															<li>
+																<p><b>_self</b>: mở trong cửa sổ/tab hiện tại (mặc định)</p>
+															</li>
+															<li>
+																<p><b>_blank</b>: mở trong cửa sổ/tab mới (người dùng không cần nhấn Ctrl)</p>
+																<div class="code-group">
+																	<div class="code-highlight language-html line-numbers keep-content">
+																		<a href="https://www.google.com" target="_blank">Google</a>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</li>
+													<li>
+														Các thuộc tính còn lại đọc thêm
+													</li>
+												</ul>
+											</div>
+											
+										</li>
+										<!--i b u s-->
+										<li>
+											<p>Thẻ &lt;i&gt;, &lt;b&gt;, &lt;u&gt;, &lt;s&gt;</p>
+											<p>MDN: 
+												<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i">i</a>, 
+												<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">b</a>, 
+												<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u">u</a>, 
+												<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s">s</a>, 
+											</p>
+											<p>W3schools: 
+												<a href="https://www.w3schools.com/tags/tag_i.asp">i</a>, 
+												<a href="https://www.w3schools.com/tags/tag_b.asp">b</a>, 
+												<a href="https://www.w3schools.com/tags/tag_u.asp">u</a>, 
+												<a href="https://www.w3schools.com/tags/tag_s.asp">s</a>, 
+											</p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Các thẻ này trước đây dùng để định dạng chữ in nghiêng, in đậm, gạch dưới, và gạch ngang. Trong HTML5 thì các thẻ này dùng để đánh dấu một đoạn văn bản có ý nghĩa khác về mặt ngữ nghĩa so với những đoạn văn còn lại (vd: tên riêng, tên tiếng nước ngoài, tên khoa học, từ chuyên ngành, đã hết hiệu lực, ...).</p>
+											</div>
+											<div class="code-group">
+												<div class="code-highlight language-html line-numbers keep-content">
+													<i>in nghiêng</i><br>
+													<b>in đậm</b><br>
+													<u>gạch dưới</u><br>
+													<s>gạch ngang</s><br>
+												</div>
+											</div>
+										</li>
+										<!--img-->
+										<li>
+											<p>Thẻ &lt;img&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">img</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_img.asp">img</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Chèn hình ảnh vào trang web</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>
+												<ul>
+													<li>
+														<p><b>src</b>: địa chỉ URL của file hình</p>
+													</li>
+													<li>
+														<p><b>alt</b>: đoạn text hiển thị khi không tải được hình (sai đường dẫn, lỗi kết nối, file bị xóa,...)</p>
+													</li>
+													<li>
+														<p><b>width</b> và <b>height</b>: kích thước chiều ngang và dọc theo pixel, nếu muốn giữ nguyên tỉ lệ như hình gốc thì chỉ ép 1 trong 2 chiều, chiều còn lại sẽ tự điều chỉnh (nên dùng CSS thay cho 2 thuộc tính này). Nếu bỏ trống cả 2 thì hình sẽ hiển thị dúng kích thước gốc</p>
+													</li>
+													<li>
+														Các thuộc tính còn lại đọc thêm
+													</li>
+												</ul>
+											</div>
+											<p>VD:</p>
+											<div class="code-group">
+												<div class="code-highlight language-css line-numbers d-none">
+													body{height:200px;}
+												</div>
+												<div class="code-highlight language-html line-numbers keep-content">
+													<img src="img/hello.png">
+													<img src="img/hello.png" height="100">
+													<img src="img/hello.png" width="150" height="100">
+												</div>
+											</div>
+										</li>
+										<!--table-->
+										<li>
+											<p>Nhóm thẻ &lt;table&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">table</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_table.asp">table</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Trước đây thẻ &lt;table&gt; có thể dùng để dựng layout. Ngày nay chỉ dùng để trình bày dữ liệu có dạng bảng/ma trận</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Các thẻ liên quan:</h5>
+												<p>Bên trong thẻ &lt;table&gt; chỉ được chứa các thẻ sau (theo đúng thứ tự)</p>
+												<ol>
+													<li><p>Một thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption">&lt;caption&gt;</a> (không bắt buộc): tên bảng</p></li>
+													<li><p>Không hoặc nhiều thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup">&lt;colgroup&gt;</a>: dùng để định dạng cột</p></li>
+													<li><p>Một thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead">&lt;thead&gt;</a> (không bắt buộc): tiêu đề bảng</p></li>
+													<li><p>Không hoặc nhiều thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody">&lt;tbody&gt;</a>: nội dung chính trong bảng</p></li>
+													<li><p>Một thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot">&lt;tfoot&gt;</a> (không bắt buộc): phần chân bảng</p></li>
+												</ol>
+												<p>Nội dung các thẻ &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; gồm không hoặc nhiều thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr">&lt;tr&gt;</a></p>
+												<p>Nội dung thẻ &lt;tr&gt; gồm không hoặc nhiều thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th">&lt;th&gt;</a> hoặc <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td">&lt;td&gt;</a></p>
+												<p>Các thẻ &lt;th&gt; và &lt;td&gt; chứa nội dung các ô tiêu đề/ô thường trong bảng. Các thẻ này có thể có các thuộc tính <b>colspan</b> và <b>rowspan</b>, chức năng tương tự merge cell trong Excel, để tạo các bảng có cấu trúc phức tạp</p>
+												<p>Thẻ &lt;colgroup&gt; đọc thêm</p>
+											</div>
+											<p>VD bảng đơn giản:</p>
+											<div class="code-group">
+												<div class="code-highlight language-html line-numbers keep-content">
+													<table>
+														<tbody>
+															<tr><th></th><th>AB</th><th>Ab</th><th>aB</th><th>ab</th></tr>
+															<tr><th>AB</th><td>AABB</td><td>AABb</td><td>AaBB</td><td>AaBb</td></tr>
+															<tr><th>Ab</th><td>AABb</td><td>AAbb</td><td>AaBb</td><td>Aabb</td></tr>
+															<tr><th>aB</th><td>AaBB</td><td>AaBb</td><td>aaBB</td><td>aaBb</td></tr>
+															<tr><th>ab</th><td>AaBb</td><td>Aabb</td><td>aaBb</td><td>aabb</td></tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<p>VD bảng có định dạng CSS</p>
+											<div class="code-group">
+												<div class="code-highlight language-css line-numbers">
+													table {
+													border-collapse: collapse;
+													}
+													th,td{
+													border: 1px solid;
+													padding: 5px 10px;
+													}
+													caption {
+													padding: 10px;
+													caption-side: bottom;
+													}
+												</div>
+												<div class="code-highlight language-html line-numbers keep-content">
+													<table>
+														<caption>Kết quả thi học kỳ 2</caption>
+														<thead>
+															<tr>
+																<th>STT</th>
+																<th>MSSV</th>
+																<th>Họ</th>
+																<th>Tên</th>
+																<th>Điểm</th>
+																<th>Đậu</th>
+																<th>Rớt</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>1</td>
+																<td>0123456789</td>
+																<td>Nguyễn Thị</td>
+																<td>A</td>
+																<td>7</td>
+																<td>X</td>
+																<td></td>
+															</tr>
+															<tr>
+																<td>2</td>
+																<td>0123456790</td>
+																<td>Lê Văn</td>
+																<td>B</td>
+																<td>3</td>
+																<td></td>
+																<td>X</td>
+															</tr>
+															<tr>
+																<td colspan="7">...</td>
+															</tr>
+															<tr>
+																<td>99</td>
+																<td>0123456887</td>
+																<td>Trần Thị</td>
+																<td>Y</td>
+																<td>5</td>
+																<td>X</td>
+																<td></td>
+															</tr>
+															<tr>
+																<td>100</td>
+																<td>0123456888</td>
+																<td>Nguyễn Văn</td>
+																<td>Z</td>
+																<td>2</td>
+																<td></td>
+																<td>X</td>
+															</tr>
+														</tbody>
+														<tfoot>
+															<tr>
+																<th colspan="5">Tổng:</th>
+																<td>45</td>
+																<td>55</td>
+															</tr>
+														</tfoot>
+													</table>
+												</div>
+											</div>
+										</li>
+										<!--form-->
+										<li>
+											<p>Thẻ &lt;form&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">form</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_form.asp">form</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Dùng để chứa các thẻ cho người dùng nhập dữ liệu và gửi dữ liệu về server (sẽ học kỹ hơn trong môn Lập trình Web)</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Các thẻ liên quan:</h5>
+												<p>Các thẻ sau không bắt buộc phải nằm trong thẻ &lt;form&gt;, nhưng thường được đặt trong &lt;form&gt; để hỗ trợ thêm chức năng cho &lt;form&gt;</p>
+												<ul>
+													<li><p>Thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">&lt;fieldset&gt;</a> và <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend">&lt;legend&gt;</a>: dùng để gom nhóm các nội dung trong &lt;form&gt; thành từng nhóm nhỏ (&lt;fieldset&gt;) và đặt tiêu đề cho nhóm (&lt;legend&gt;)</p></li>
+													<li><p>Thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">&lt;label&gt;</a>: dùng để hiển thị tiêu đề cho các thẻ nhập liệu (&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;)</p></li>										
+												</ul>
+												<p>Các thẻ sau không bắt buộc phải nằm trong thẻ &lt;form&gt;, nhưng chỉ khi nằm trong &lt;form&gt; mới gửi được dữ liệu về server (chưa xét tới trường hợp dùng Javascript để gửi dữ liệu)</p>
+												<ul>
+													<li><p>Thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">&lt;input&gt;</a>: thẻ chính để người dùng nhập liệu, có rất nhiều loại khác nhau tùy theo thuộc tính <b>type</b></p></li>
+													<li><p>Thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">&lt;textarea&gt;</a>: cho người dùng nhập 1 đoạn văn bản dài, có thể có nhiều dòng</p></li>
+													<li><p>Thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">&lt;select&gt;</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup">&lt;optgroup&gt;</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option">&lt;option&gt;</a>: cho người dùng chọn một hoặc nhiều tùy chọn trong một danh sách các tùy chọn cho trước (mỗi thẻ &lt;option&gt; là 1 tùy chọn, có thể gom nhóm nhiều tùy chọn bằng thẻ &lt;optgroup&gt;)</p></li>
+													<li><p>Thẻ <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">&lt;button&gt;</a>: tạo các nút bấm cho người dùng nhưng chức năng hạn chế, thường kết hợp với Javascript để thêm nhiều chức năng hơn</p></li>
+												</ul>
+												<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#see_also">Đọc thêm một số thẻ khác</a></p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>									
+												<ul>
+													<li><p><b>action</b>: địa chỉ để gửi dữ liệu tới, nếu để trống thì sẽ gửi tới địa chỉ trang hiện tại</p></li>
+													<li><p><b>method</b>: cách gửi dữ liệu</p>
+														<ul>
+															<li><b>get</b>: (giá trị mặc định) dữ liệu người dùng nhập sẽ được nối vào địa chỉ trong thuộc tính <b>action</b> và hiện lên trên thanh địa chỉ của trình duyệt</li>
+															<li><b>post</b>: dữ liệu người dùng nhập được ẩn đi khi gửi</li>
+														</ul>
+													</li>	
+													<li><p><b>enctype</b>: cách gửi dữ liệu</p>
+														<ul>
+															<li><b>application/x-www-form-urlencoded</b>: (giá trị mặc định) dùng cho các &lt;form&gt; thông thường</li>
+															<li><b>multipart/form-data</b>: dùng cho các &lt;form&gt; có thẻ &lt;input type="file"&gt;</li>
+														</ul>
+													</li>										
+												</ul>									
+												<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#attributes">Đọc thêm một số thuộc tính khác</a></p>
+											</div>
+											<p>VD:</p>
+											<div class="code-group">
+												<div class="code-highlight language-html line-numbers keep-content">
+													<h3>Đăng ký</h3>
+													<form method="post">
+														<fieldset>
+															<fieldset>
+																<legend>Thông tin tài khoản</legend>
+																<label>Tên đăng nhập:</label><input name="username"><br>
+																<label>Mật khẩu:</label><input type="password" name="password"><br>
+																<label>Nhập lại mật khẩu:</label><input type="password" name="repassword"><br>
+															</fieldset>
+															<fieldset>
+																<legend>Thông tin cá nhân</legend>
+																<label>Họ tên:</label><input name="hoten"><br>
+																<label>Địa chỉ:</label><textarea name="diachi"></textarea><br>				
+																<label>Email:</label><input name="email"><br>
+																<label>Ngày sinh:</label><input name="ngaysinh"><br>
+																<label>Giới tính:</label>
+																<input type="radio"><label>Nam</label>
+																<input type="radio"><label>Nữ</label>
+																<input type="radio"><label>Khác</label><br>
+																<label>Tỉnh thành:</label>
+																<select name="tinhthanh">
+																	<option>Hà Nội</option>
+																	<option>Tp HCM</option>
+																	<option>Bình dương</option>
+																	<option>An Giang</option>
+																</select><br>
+																<label>Ngoại ngữ:</label>				
+																<input type="checkbox"><label>Anh</label>
+																<input type="checkbox"><label>Pháp</label>
+																<input type="checkbox"><label>Nhật</label>
+																<input type="checkbox"><label>Hàn</label>
+																<input type="checkbox"><label>Nga</label>
+																<input type="checkbox"><label>Trung</label><br>
+															</fieldset>
+															<input type="submit">
+															<input type="reset">
+														</fieldset>
+													</form>
+												</div>
+											</div>							
+										</li>
+										<!--label-->
+										<li>
+											<p>Thẻ &lt;label&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">label</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_label.asp">label</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Hiện một đoạn text làm tiêu đề cho các thẻ nhập liệu (&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;), hỗ trợ người dùng chọn (focus) các thẻ này dễ dàng hơn, đặc biệt là các thẻ có kích thước nhỏ, khó click vào như checkbox và radio</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Các thẻ liên quan:</h5>
+												<p>Các thẻ nhập liệu (&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;) có thể nằm trong thẻ &lt;label&gt; hoặc nằm ngoài và liên kết với thẻ &lt;label&gt; thông qua thuộc tính <b>for</b> và <b>id</b></p>
+											</div>
+											<p>VD: (click vào các label để thấy tác dụng)</p>
+											<div class="code-group">
+												<div class="code-highlight language-html line-numbers keep-content">
+													<label>Label này không click được :P</label> <input type="checkbox"><br>
+													<label>Label này chứa thẻ input <input type="checkbox"></label> <br>
+													<label for="txt3">Label này có thuộc tính for</label> <input id="txt3" type="checkbox"><br>										
+												</div>
+											</div>
+										</li>
+										<!--input-->
+										<li>
+											<p>Thẻ &lt;input&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">input</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_input.asp">input</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Thẻ chính để người dùng nhập liệu, có rất nhiều loại khác nhau tùy theo thuộc tính <b>type</b></p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Các thẻ liên quan:</h5>
+												<p>Không bắt buộc phải nằm trong thẻ &lt;form&gt;, nhưng chỉ khi nằm trong &lt;form&gt; mới gửi được dữ liệu về server (chưa xét tới trường hợp dùng Javascript để gửi dữ liệu)</p>
+												<p>Kết hợp với thẻ &lt;label&gt; để hỗ trợ người dùng chọn (focus) các thẻ này dễ dàng hơn, đặc biệt là các thẻ có kích thước nhỏ, khó click vào như checkbox và radio</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>
+												<p>Các thuộc tính chung, áp dụng cho hầu hết các loại input, nhưng do có rất nhiều loại nên một số thuộc tính có thể không áp dụng được cho một số loại.</p>
+												<ul>
+													<li><p><b>name</b>: bắt buộc phải có mới gửi dữ liệu về server được. Một số trường hợp phải có giá trị thuộc tính name giống nhau thì mới sử dụng được</p></li>
+													<li><p><b>value</b>: giá trị mặc định khi người dùng vừa mở trang web lên</p></li>
+													<li><p><b>disabled</b>: thuộc tính boolean, không cho người dùng sử dụng thẻ này, và không gửi dữ liệu trong thẻ này về server</p></li>
+													<li><p><b>required</b>: thuộc tính boolean, bắt buộc người dùng phải nhập dữ liệu trong thẻ này mới cho phép gửi dữ liệu trong &lt;form&gt; về server</p></li>
+													<li><p><b>type</b>: các loại trường nhập liệu khác nhau, mặc định là <b>text</b></p></li>
+												</ul>
+												<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">Tham khảo thêm một số thuộc tính khác</a></p>
+											</div>
+											<p>Một số giá trị thường dùng của thuộc tính <b>type</b></p>
+											<ul class="heading">
+												<!--type text-->
+												<li>
+													<p>text</p>
+													<div class="callout callout-info">
+														<h5>Chức năng</h5>
+														<p>Giá trị mặc định, tạo một ô nhập văn bản (chỉ được nhập 1 dòng, nếu muốn nhập nhiều dòng thì dùng thẻ &lt;textarea&gt;)</p>
+													</div>
+													<div class="callout callout-warning">
+														<h5>Thuộc tính:</h5>
+														<ul>
+															<li><p><b>size</b>: kích thước, tính bằng số lượng ký tự (nên dùng CSS thay cho thuộc tính này). Lưu ý: kết quả không chính xác do phụ thuộc vào font chữ</p></li>
+															<li><p><b>placeholder</b>: đoạn text mô tả, chỉ hiện ra khi người dùng bỏ trống nội dung thẻ này</p></li>
+															<li><p><b>required</b>: thuộc tính boolean, bắt buộc người dùng phải nhập vào thẻ này mới được gửi &lt;form&gt;</p></li>
+															<li><p><b>minlength</b>: Số ký tự tối thiểu phải nhập vào (chỉ kiểm tra trước khi gửi &lt;form&gt;, và không kiểm tra nếu người dùng bỏ trống)</p></li>
+															<li><p><b>maxlength</b>: Số ký tự tối đa được nhập vào (kiểm tra ngay khi nhập)</p></li>
+															<li><p><b>pattern</b>: mẫu <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular expressions</a> (sẽ học sau trong phần JavaScript) để kiểm tra dữ liệu nhập trước khi gửi &lt;form&gt; (chỉ kiểm tra trước khi gửi &lt;form&gt;, và không kiểm tra nếu người dùng bỏ trống).</p></li>
+														<li><p>Khi dùng <b>minlength</b>, <b>required</b>, <b>pattern</b> để kiểm tra dữ liệu thì câu thông báo lỗi phụ thuộc vào trình duyệt, không thay đổi được. Đặc biệt đối với <b>pattern</b>, nếu nhập sai thì câu thông báo không cho biết sai như thế nào nên cần có một đoạn text hướng dẫn người dùng cách nhập dúng (có thể dùng các thẻ văn bản khác, thuộc tính <b>placeholder</b>, thuộc tính <b>title</b>, hoặc tự viết JavaScript kiểm tra và xuất thông báo)</p></li>
+														</ul>
+														<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">Tham khảo thêm một số thuộc tính khác</a></p>
+													</div>
+													<div class="code-group">
+														<div class="code-highlight language-html line-numbers keep-content">
+															<form>
+																Basic:<br><input><br>
+																Size:<br><input size="10"><br><input size="45"><br>
+																Placeholder:<br><input placeholder="Nhập họ tên"><br>
+																Min, max, required: (thử bỏ trống hoặc nhập sai rồi gửi form)<br>
+																<input placeholder="Nhập tối thiểu 5 ký tự" minlength="5"><br>
+																<input placeholder="Nhập tối đa 10 ký tự" maxlength="10"><br>
+																<input placeholder="Nhập từ 5 đến 10 ký tự" minlength="5" maxlength="10"><br>
+																<input placeholder="Nhập từ 5 đến 10 ký tự (bắt buộc)" minlength="5" maxlength="10" required="required" size="30"><br>
+																Pattern: (thử bỏ trống hoặc nhập sai rồi gửi form)<br>
+																<input placeholder="Nhập số nguyên dương có 10 chữ số" pattern="[1-9]\d{9}" required="required"  size="50"><br>
+																<input placeholder="Nhập từ 5 đến 10 chữ số chẵn" required="required" pattern="[02468]{5,10}" size="50"><br>
+																<input type="submit"><br>
+															</form>
+														</div>
+													</div>
+												</li>
+												<!--type password-->
+												<li>
+													<p>password</p>
+													<div class="callout callout-info">
+														<h5>Chức năng</h5>
+														<p>Tạo một ô nhập mật khẩu, các ký tự do người dùng nhập vào sẽ hiển thị trên màn hình dưới dạng dấu chấm</p>
+													</div>
+													<div class="callout callout-warning">
+														<h5>Thuộc tính:</h5>
+														<ul>
+															<li><p><b>size</b>: kích thước, tính bằng số lượng ký tự (nên dùng CSS thay cho thuộc tính này). Lưu ý: kết quả không chính xác do phụ thuộc vào font chữ</p></li>
+															<li><p><b>placeholder</b>: đoạn text mô tả, chỉ hiện ra khi người dùng bỏ trống nội dung thẻ này</p></li>
+															<li><p><b>minlength</b>: Số ký tự tối thiểu phải nhập vào (chỉ kiểm tra trước khi gửi &lt;form&gt;, và không kiểm tra nếu người dùng bỏ trống)</p></li>
+															<li><p><b>maxlength</b>: Số ký tự tối đa được nhập vào (kiểm tra ngay khi nhập)</p></li>
+															<li><p><b>pattern</b>: mẫu <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular expressions</a> (sẽ học sau trong phần JavaScript) để kiểm tra dữ liệu nhập trước khi gửi &lt;form&gt; (chỉ kiểm tra trước khi gửi &lt;form&gt;, và không kiểm tra nếu người dùng bỏ trống).</p></li>
+														<li><p>Khi dùng <b>minlength</b>, <b>required</b>, <b>pattern</b> để kiểm tra dữ liệu thì câu thông báo lỗi phụ thuộc vào trình duyệt, không thay đổi được. Đặc biệt đối với <b>pattern</b>, nếu nhập sai thì câu thông báo không cho biết sai như thế nào nên cần có một đoạn text hướng dẫn người dùng cách nhập dúng (có thể dùng các thẻ văn bản khác, thuộc tính <b>placeholder</b>, thuộc tính <b>title</b>, hoặc tự viết JavaScript kiểm tra và xuất thông báo)</p></li>
+														</ul>
+														<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">Tham khảo thêm một số thuộc tính khác</a></p>
+													</div>
+													<div class="code-group">
+														<div class="code-highlight language-html line-numbers keep-content">
+															<form>
+																Basic:<br><input type="password" ><br>
+																Size:<br><input type="password" size="10"><br><input type="password" size="45"><br>
+																Placeholder:<br><input placeholder="Nhập họ tên"><br>
+																Min, max, required: (thử bỏ trống hoặc nhập sai rồi gửi form)<br>
+																<input type="password" placeholder="Nhập tối thiểu 5 ký tự" minlength="5"><br>
+																<input type="password" placeholder="Nhập tối đa 10 ký tự" maxlength="10"><br>
+																<input type="password" placeholder="Nhập từ 5 đến 10 ký tự" minlength="5" maxlength="10"><br>
+																<input type="password" placeholder="Nhập từ 5 đến 10 ký tự (bắt buộc)" minlength="5" maxlength="10" required="required" size="30"><br>
+																Pattern: (thử bỏ trống hoặc nhập sai rồi gửi form)<br>
+																<input type="password" placeholder="Nhập số nguyên dương có 10 chữ số" pattern="[1-9]\d{9}" required="required"  size="50"><br>
+																<input type="password" placeholder="Nhập từ 5 đến 10 chữ số chẵn" required="required" pattern="[02468]{5,10}" size="50"><br>
+																<input type="submit"><br>
+															</form>
+														</div>
+													</div>
+												</li>
+												<!--type hidden-->
+												<li>
+													<p>hidden</p>
+													<div class="callout callout-info">
+														<h5>Chức năng</h5>
+														<p>Không hiển thị lên màn hình, dùng để gửi một giá trị về server (vd mã sản phẩm) mà không cho người dùng nhìn thấy/chỉnh sửa (không xét trường hợp "người dùng" mở console trình duyệt lên sửa)</p>
+													</div>
+													<div class="callout callout-warning">
+														<h5>Thuộc tính:</h5>
+														<p>Không có thuộc tính riêng, chỉ có <b>name</b> và <b>value</b></p>
+													</div>
+													<div class="code-group">
+														<div class="code-highlight language-html line-numbers keep-content">
+															<form>
+																<h2>Sản phẩm ABC</h2>
+																<!--Người dùng không nhìn thấy input này-->
+																<input type="hidden" name="MASP" value="SP001">
+																<label>Nhập số lượng: <input type="number" value="1" min="1" required="required"></label>
+																<input type="submit" value="Mua"><br>
+															</form>
+														</div>
+													</div>
+												</li>
+												<!--type number-->
+												<li>
+													<p>number</p>
+													<div class="callout callout-info">
+														<h5>Chức năng</h5>
+														<p>Tạo một ô nhập số</p>
+													</div>
+													<div class="callout callout-warning">
+														<h5>Thuộc tính:</h5>
+														<ul>
+															<li><p><b>placeholder</b>: đoạn text mô tả, chỉ hiện ra khi người dùng bỏ trống nội dung thẻ này (nhưng nên tránh vì kiểu number không có thuộc tính <b>size</b> nên thường không thể hiện đủ đoạn text)</p></li>
+															<li><p><b>min</b>: Giá trị tối thiểu, không được lớn hơn <b>max</b></p></li>
+															<li><p><b>max</b>: Giá trị tối đa, không được nhỏ hơn <b>min</b></p></li>
+															<li><p><b>step</b>: Giá trị người dùng nhập vào phải có dạng <b>min</b> + n*<b>step</b> (hoặc <b>value</b> + n*<b>step</b> nếu không có <b>min</b>).  Nếu bỏ trống thì mặc định là 1. Nếu <b>step="any"</b> thì người dùng có thể nhập bất kỳ giá trị nào giữa <b>min</b> và <b>max</b></p></li>
+															<li><p>Lưu ý: nếu người dùng bỏ trống mà không có thuộc tính <b>required</b> thì không kiểm tra các điều kiện trên</p></li>
+														</ul>
+														<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">Tham khảo thêm một số thuộc tính khác</a></p>
+													</div>
+													<div class="code-group">
+														<div class="code-highlight language-html line-numbers keep-content">
+															<form>
+																Basic:<br><input type="number"><br>
+																Min, max:<br>
+																<input type="number" min="5"><br>
+																<input type="number" max="10"><br>
+																<input type="number" min="5" max="10"><br>
+																Step:<br>
+																<input type="number" min="5" max="10" step="1"><br>
+																<input type="number" min="5" max="10" step="0.1"><br>
+																<input type="number" min="5" max="10" step="0.01"><br>
+																<input type="number" min="5" max="10" step="any"><br>
+																<input type="submit"><br>
+															</form>
+														</div>
+													</div>
+												</li>
+												<!--type date-->
+												<li>
+													<p>date</p>
+													<div class="callout callout-info">
+														<h5>Chức năng</h5>
+														<p>Tạo một ô nhập ngày, tùy trình duyệt có thể kèm theo một control dạng lịch cho người dùng chọn ngày. Dữ liệu hiện trên màn hình sẽ được định dạng theo định dạng hệ thống nhưng khi gửi về server thì luôn theo định dạng <b>"yyyy-mm-dd"</b> (vd: 2021-01-01, 2021-12-31)</p>
+													</div>
+													<div class="callout callout-warning">
+														<h5>Thuộc tính:</h5>
+														<ul>
+															<li><p><b>min</b>: Giá trị tối thiểu, theo định dạng <b>"yyyy-mm-dd"</b>, không được lớn hơn <b>max</b></p></li>
+															<li><p><b>max</b>: Giá trị tối đa, theo định dạng <b>"yyyy-mm-dd"</b>, không được nhỏ hơn <b>min</b></p></li>
+															<li><p><b>step</b>: Giá trị người dùng nhập vào phải có dạng <b>min</b> + n*<b>step</b> (hoặc <b>value</b> + n*<b>step</b> nếu không có <b>min</b>).  Nếu bỏ trống thì mặc định là 1. Khác với kiểu number, <b>step</b> phải là một số nguyên (số ngày) và <b>step="any"</b> có ý nghĩa như <b>step="1"</b></p></li>
+															<li><p>Lưu ý: nếu người dùng bỏ trống mà không có thuộc tính <b>required</b> thì không kiểm tra các điều kiện trên. Nếu <b>min</b> hoặc <b>max</b> không đúng dịnh dạng hoặc ngày không hợp lệ (vd: 2100-02-29) thì xem như không có giới hạn tối thiểu/tối đa</p></li>
+														</ul>
+														<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">Tham khảo thêm một số thuộc tính khác</a></p>
+													</div>
+													<div class="code-group">
+														<div class="code-highlight language-html line-numbers keep-content">
+															<form>
+																Basic:<br><input type="date"><br>
+																Min, max, step:<br>
+																<input type="date" min="3000-01-01"><br>
+																<input type="date" max="2012-12-22"><br>
+																<input type="date" step="3"><br>
+																<input type="submit"><br>
+															</form>
+														</div>
+													</div>
+												</li>
+												<!--type email-->
+												<li>
+													<p>email</p>
+													<div class="callout callout-info">
+														<h5>Chức năng</h5>
+														<p>Tạo một ô nhập địa chỉ email</p>
+													</div>
+													<div class="callout callout-warning">
+														<h5>Thuộc tính:</h5>
+														<ul>
+															<li><p><b>size</b>: kích thước, tính bằng số lượng ký tự (nên dùng CSS thay cho thuộc tính này). Lưu ý: kết quả không chính xác do phụ thuộc vào font chữ</p></li>
+															<li><p><b>placeholder</b>: đoạn text mô tả, chỉ hiện ra khi người dùng bỏ trống nội dung thẻ này</p></li>
+															<li><p><b>minlength</b>: Số ký tự tối thiểu phải nhập vào (chỉ kiểm tra trước khi gửi &lt;form&gt;, và không kiểm tra nếu người dùng bỏ trống)</p></li>
+															<li><p><b>maxlength</b>: Số ký tự tối đa được nhập vào (kiểm tra ngay khi nhập)</p></li>
+															<li><p><b>pattern</b>: mẫu <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">Regular expressions</a> (sẽ học sau trong phần JavaScript) để kiểm tra dữ liệu nhập trước khi gửi &lt;form&gt; (chỉ kiểm tra trước khi gửi &lt;form&gt;, và không kiểm tra nếu người dùng bỏ trống).</p></li>
+															<li><p><b>multiple</b>: thuộc tính boolean, cho phép nhập một danh dách địa chỉ email cách nhau bằng dấu phẩy (,). Mẫu Regex trong <b>pattern</b> sẽ được kiểm tra cho từng email trong danh sách</p></li>														
+														<li><p>Khi dùng <b>minlength</b>, <b>required</b>, <b>pattern</b> để kiểm tra dữ liệu thì câu thông báo lỗi phụ thuộc vào trình duyệt, không thay đổi được. Đặc biệt đối với <b>pattern</b>, nếu nhập sai thì câu thông báo không cho biết sai như thế nào nên cần có một đoạn text hướng dẫn người dùng cách nhập dúng (có thể dùng các thẻ văn bản khác, thuộc tính <b>placeholder</b>, thuộc tính <b>title</b>, hoặc tự viết JavaScript kiểm tra và xuất thông báo)</p></li>
+														</ul>
+														<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">Tham khảo thêm một số thuộc tính khác</a></p>
+													</div>
+													<div class="code-group">
+														<div class="code-highlight language-html line-numbers keep-content">
+															<form>
+																Basic:<br><input type="email"><br>
+																Pattern:<br>
+																<input type="email" placeholder="email@gmail.com" pattern=".+@gmail\.com" required="required"  size="50"><br>
+																<input type="email" multiple="multiple" placeholder="email@gmail.com hoặc email@yahoo.com" pattern=".+@(gmail|yahoo)\.com" required="required"  size="50"><br>
+																<input type="submit"><br>
+															</form>
+														</div>
+													</div>
+												</li>
+												<!--type checkbox radio-->
+												<li>
+													<p>checkbox và radio</p>
+													<div class="callout callout-info">
+														<h5>Chức năng</h5>
+														<p><b>Checkbox</b>: Tạo một ô cho người dùng bật/tắt một tùy chọn, hoặc chọn không hoặc nhiều tùy chọn trong một danh sách</p>
+														<p><b>Radio</b>: Tạo một ô cho người chọn một tùy chọn trong một danh sách</p>
+													</div>
+													<div class="callout callout-warning">
+														<h5>Label</h5>
+														<p>Checkbox/radio thường có kích thước nhỏ, rất khó chọn nên thường được kết hợp với thẻ &lt;label&gt; </p>
+													</div>
+													<div class="callout callout-warning">
+														<h5>Thuộc tính:</h5>
+														<ul>
+															<li><p><b>checked</b>: thuộc tính boolean chọn sẵn thẻ này khi người dùng vừa load trang web</p></li>
+														<li><p><b>value</b>: khác các loại khác, với checkbox/radio thì giá trị này chỉ được gửi về server nếu thẻ này đang được chọn khi người dùng gửi &lt;form&gt;. Nếu bỏ trống thì mặc định là chuỗi <b>"on"</b></p></li>
+													<li><p><b>name</b>: khi cần cho người dùng chọn trong một danh sách thì nên đặt thuộc tính <b>name</b> của các checkbox trùng nhau để dễ xử lý phía server (tùy vào ngôn ngữ server). Đối với radio thì <b>bắt buộc</b> phải trùng nhau thì các radio trong cùng nhóm mới có thể loại trừ lẫn nhau</p></li>
+													<li><p><b>required</b>: với checkbox thì người dùng cần chọn vào tất cả các checkbox có <b>required</b>. Với radio thì người dùng chỉ cần chọn ít nhất 1 radio có <b>name</b> trùng với radio có <b>required</b></p></li>
+														</ul>
+														<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">Tham khảo thêm một số thuộc tính khác</a></p>
+													</div>
+													<div class="code-group">
+														<div class="code-highlight language-html line-numbers keep-content">
+															<form>
+																Radio sai (thử chọn nhiều tùy chọn trong danh sách)<br>
+																<label><input type="radio" value="nam"> Nam</label>
+																<label><input type="radio" value="nu"> Nữ</label>
+																<label><input type="radio" value="khac"> Khác</label><br>
+																
+																Radio required (chú ý chỉ cần gắn thuộc tính required cho 1 radio trong nhóm)<br>
+																<label><input type="radio" name="gioitinh" value="nam" required="required"> Nam</label>
+																<label><input type="radio" name="gioitinh" value="nu"> Nữ</label>
+																<label><input type="radio" name="gioitinh" value="khac"> Khác</label><br>
+																
+																Checkbox:<br>
+																<label><input type="checkbox" name="ihave" value="pen"> Pen</label>
+																<label><input type="checkbox" name="ihave" value="apple"> Apple</label>
+																<label><input type="checkbox" name="ihave" value="pineapple"> Pineapple</label><br>
+																
+																Checkbox required:<br>
+																<label><input type="checkbox" name="dksd" required="required"> Tôi đã đọc và đồng ý điều khoản sử dụng</label><br>
+																<input type="submit"><br>
+															</form>
+														</div>
+													</div>
+												</li>
+												<!--type file-->
+												<li>
+													<p>file</p>
+													<div class="callout callout-info">
+														<h5>Chức năng</h5>
+														<p>Cho người dùng upload file lên server</p>
+													</div>
+													<div class="callout callout-danger">
+														<h5>enctype</h5>
+														<p>Thẻ &lt;form&gt; có chứa &lt;input type="file"&gt; bắt buộc phải có <b>enctype="multipart/form-data"</b> thì mới upload file được</p>
+													</div>
+													<div class="callout callout-warning">
+														<h5>Thuộc tính:</h5>
+														<ul>
+															<li><p><b>multiple</b>: thuộc tính boolean, cho phép người dùng chọn nhiều file</p></li>
+															<li>
+																<p><b>accept</b>: giới hạn loại file người dùng được phép upload, có thể nhân các giá trị sau:</p>
+																<ul>
+																	<li><p><b>Phần mở rộng của tên file</b> vd: .doc, .jpg, .pdf</p></li>
+																	<li><p><b>audio/*</b>: tất cả các loại file âm thanh </p></li>
+																	<li><p><b>video/*</b>: tất cả các loại file video </p></li>
+																	<li><p><b>image/*</b>: tất cả các loại file ảnh </p></li>
+																	<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">MIME type string</a></p></li>
+																	<li><p>Một danh sách các loại trên, vd: "image/*,.pdf,.doc,.xls"</p></li>
+																</ul>
+															</li>
+														</ul>
+														<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">Tham khảo thêm một số thuộc tính khác</a></p>
+													</div>
+													<div class="code-group">
+														<div class="code-highlight language-html line-numbers keep-content">
+															<form enctype="multipart/form-data" method="post">
+																<input type="file" accept="image/*" multiple="multiple"><br>
+																<input type="submit"><br>
+															</form>
+														</div>
+													</div>
+												</li>
+												<!--type button submit reset-->
+												<li>
+													<p>submit, reset, và button</p>
+													<div class="callout callout-info">
+														<h5>Chức năng</h5>
+														<p><b>submit</b>: nút gửi &lt;form&gt;</p>
+														<p><b>reset</b>: nút đặt lại giá trị/trạng thái các thẻ &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt; trong &lt;form&gt;về như lúc vừa load trang</p>
+														<p><b>button</b>: tạo ra một nút không có chức năng gì, phải kết hợp với JavaScript để xử lý phía client</p>
+													</div>
+													<div class="callout callout-warning">
+														<h5>Thuộc tính:</h5>
+														<ul>
+															<li><p><b>value</b>: phần chữ hiển thị trong nút. Nếu bỏ trống thì submit và reset sẽ dùng chữ mặc định (tùy trình duyệt), còn button thì không có chữ. Nên dùng thẻ &lt;button&gt; thay cho 3 loại này nếu muốn hiển thị nội dung phức tạp hơn (vd ảnh, icon) trong nút</p></li>
+														</ul>
+														<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">Tham khảo thêm một số thuộc tính khác</a></p>
+													</div>
+													<div class="code-group">
+														<div class="code-highlight language-html line-numbers keep-content">
+															<form>
+																Thử sửa các thẻ &lt;input&gt; sau rồi click vào nút thứ 2<br>
+																<input value="default"><br>
+																<input required="required"><br>
+																<label><input type="checkbox"> A</label>
+																<label><input type="checkbox"> B</label>
+																<label><input type="checkbox" checked="checked"> C</label><br>
+																<label><input type="radio" name="a"> 1</label>
+																<label><input type="radio" name="a" checked="checked"> 2</label>
+																<label><input type="radio" name="a"> 3</label><br>
+																<input type="submit"><input type="reset"><input type="button"value="Ahihi"><br>
+															</form>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<!--select-->
+										<li>
+											<p>Thẻ &lt;select&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_select.asp">select</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Cho người dùng chọn một hoặc nhiều tùy chọn trong một danh sách các tùy chọn cho trước</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Các thẻ liên quan:</h5>
+												<p>Không bắt buộc phải nằm trong thẻ &lt;form&gt;, nhưng chỉ khi nằm trong &lt;form&gt; mới gửi được dữ liệu về server (chưa xét tới trường hợp dùng Javascript để gửi dữ liệu)</p>
+												<p>Chứa các thẻ &lt;option&gt;, mỗi thẻ &lt;option&gt; là 1 tùy chọn, có thể gom nhóm nhiều tùy chọn bằng thẻ &lt;optgroup&gt;</p>
+												<p>Trong một số trường hợp có thể dùng để thay thế cho &lt;input type="checkbox"&gt; hoặc &lt;input type="radio"&gt;</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>
+												<ul>
+													<li><p><b>multiple</b>: cho phép chọn nhiều tùy chọn (dùng các phím Ctrl hoặc Shift)</p></li>
+													<li><p><b>size</b>: Số dòng hiển thị khi có <b>multiple</b></p></li>
+												</ul>
+												<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes">Tham khảo thêm một số thuộc tính khác</a></p>
+											</div>
+											<p>Xem vd trong phần thẻ &lt;option&gt;</p>
+										</li>						
+										<!--option optgroup-->
+										<li>
+											<p>Thẻ &lt;option&gt; và &lt;optgroup&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option">option</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup">optgroup</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_option.asp">option</a>, <a href="https://www.w3schools.com/tags/tag_optgroup.asp">optgroup</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Tạo các tùy chọn/nhóm tùy chọn cho thẻ &lt;select&gt;</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Các thẻ liên quan:</h5>
+												<p>Thẻ &lt;option&gt; phải nằm trong thẻ &lt;select&gt; hoặc &lt;optgroup&gt; và chỉ được chứa text</p>
+												<p>Thẻ &lt;optgroup&gt; phải nằm trong thẻ &lt;select&gt; và chỉ được chứa thẻ &lt;option&gt;</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>
+												<p>Thuộc tính của thẻ &lt;optgroup&gt;</p>
+												<ul>
+													<li><p><b>disabled</b>: không cho người dùng chọn các thẻ &lt;option&gt; bên trong thẻ này</p></li>
+													<li><p><b>label</b>: bắt buộc, dùng để hiện tiêu đề cho cả nhóm</p></li>
+												</ul>
+												<p>Thuộc tính của thẻ &lt;option&gt;</p>
+												<ul>
+													<li><p><b>disabled</b>: thuộc tính boolean, không cho người dùng chọn thẻ &lt;option&gt; này</p></li>
+													<li><p><b>label</b>: dùng để hiện tiêu đề cho thẻ &lt;option&gt; này. Nếu bỏ trống thì tiêu đề sẽ là nội dung text bên trong thẻ</p></li>
+													<li><p><b>selected</b>: thuộc tính boolean, chọn sẵn thẻ này khi người dùng vừa load trang</p></li>
+													<li><p><b>value</b>: giá trị được gửi về server nếu thẻ này đang được chọn khi người dùng gửi &lt;form&gt;. Nếu bỏ trống thì giá trị sẽ là nội dung text bên trong thẻ</p></li>
+												</ul>
+											</div>
+											<p>VD:</p>
+											<div class="code-group">
+												<div class="code-highlight language-html line-numbers keep-content">
+													<form>
+														<select multiple="multiple" size="12">
+															<optgroup label="Light">
+																<option value="#faa" selected="selected">Light red</option>
+																<option value="#afa" disabled="disabled">Light green</option>
+																<option value="#aaf">Light blue</option>
+															</optgroup>
+															<optgroup label="Normal" disabled="disabled">
+																<option value="#f00">Red</option>
+																<option value="#0f0">Green</option>
+																<option value="#00f">Blue</option>
+															</optgroup>
+															<optgroup label="Dark">
+																<option value="#f00" selected="selected">Dark red</option>
+																<option value="#0f0">Dark green</option>
+																<option value="#00f">Dark blue</option>
+															</optgroup>
+														</select>
+													</form>
+												</div>
+											</div>
+										</li>
+										<!--textarea-->
+										<li>
+											<p>Thẻ &lt;textarea&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_textarea.asp">textarea</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Cho người dùng nhập 1 đoạn văn bản dài, có thể có nhiều dòng</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Các thẻ liên quan:</h5>
+												<p>Không bắt buộc phải nằm trong thẻ &lt;form&gt;, nhưng chỉ khi nằm trong &lt;form&gt; mới gửi được dữ liệu về server (chưa xét tới trường hợp dùng Javascript để gửi dữ liệu)</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>									
+												<ul>
+													<li><p><b>rows</b> và <b>cols</b>: kích thước của thẻ này, tính bằng số dòng và cột (nên dùng CSS thay cho 2 thuộc tính này)</p></li>
+													<li><p><b>placeholder</b>: đoạn text mô tả, chỉ hiện ra khi người dùng bỏ trống nội dung thẻ này</p></li>
+													<li><p><b>required</b>: thuộc tính boolean, bắt buộc người dùng phải nhập dữ liệu trong thẻ này mới cho phép gửi dữ liệu trong &lt;form&gt; về server</p></li>
+													<li><p><b>minlength</b>: Số ký tự tối thiểu phải nhập vào (chỉ kiểm tra trước khi gửi &lt;form&gt;, và không kiểm tra nếu người dùng bỏ trống)</p></li>
+													<li><p><b>maxlength</b>: Số ký tự tối đa được nhập vào (kiểm tra ngay khi nhập)</p></li>
+													<li><p>Khác với thẻ &lt;input&gt;, thẻ &lt;textarea&gt; <b>không</b> có thuộc tính <b>value</b> nên nếu cần có giá trị mặc định khi người dùng vừa mở trang web lên thì phải để trong nội dung thẻ</p></li>
+												</ul>											
+											</div>
+											<p>VD:</p>
+											<div class="code-group">
+												<div class="code-highlight language-html line-numbers keep-content">
+													<textarea rows="3" cols="10">0123456789</textarea><br>
+													<textarea maxlength="20" placeholder="Nhập vào 20 ký tự"></textarea>
+												</div>
+											</div>
+										</li>
+										<!--button-->
+										<li>
+											<p>Thẻ &lt;button&gt;</p>
+											<p>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">button</a></p>
+											<p>W3schools: <a href="https://www.w3schools.com/tags/tag_button.asp">button</a></p>
+											<div class="callout callout-info">
+												<h5>Chức năng</h5>
+												<p>Tạo các tạo các nút bấm cho người dùng nhưng chức năng hạn chế, thường kết hợp với Javascript để thêm nhiều chức năng hơn.</p>
+												<p>Có các loại giống như các nút được tạo từ thẻ &lt;input&gt; nhưng khác &lt;input&gt; ở chỗ thẻ &lt;button&gt; không phải là thẻ rỗng nên có thể có nội dung bên trong</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Các thẻ liên quan:</h5>
+												<p>Không bắt buộc phải nằm trong thẻ &lt;form&gt;, nhưng chỉ khi nằm trong &lt;form&gt; mới gửi được dữ liệu về server (chưa xét tới trường hợp dùng Javascript để gửi dữ liệu)</p>
+											</div>
+											<div class="callout callout-warning">
+												<h5>Thuộc tính:</h5>	
+												<ul>
+													<li><p>Thuộc tính <b>type</b> có các giá trị <b>submit</b> (mặc định), <b>reset</b>, <b>button</b> cho ra kết quả tương tự thẻ &lt;input type="submit"&gt;, &lt;input type="reset"&gt;, &lt;input type="button"&gt;</p></li>
+													<li><p>Do thẻ &lt;button&gt; không phải là thẻ rỗng nên nội dung hiển thị trong nút được tạo ra không còn phụ thuộc vào giá trị thuộc tính <b>value</b> như thẻ &lt;input&gt;</p></li>
+												</ul>
+											</div>
+											<p>Xem vd trong phần thẻ &lt;input type="submit"&gt;, &lt;input type="reset"&gt;, &lt;input type="button"&gt;</p>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<p>Đường dẫn trong HTML</p>
+									<p>Một số thẻ phụ thuộc vào đường dẫn tới các file khác như &lt;a&gt;, &lt;img&gt;, &lt;link&gt;, &lt;script&gt;, ... Các thẻ này đều có chung cách ghi đường dẫn như sau:</p>
+									<ul>
+										<li><p>Nếu đường dẫn bắt đầu bằng tên file/thư mục thì tìm trong thư mục hiện tại</p></li>
+										<li><p>Nếu đường dẫn bắt đầu bằng "./" thì tìm trong thư mục hiện tại (như trường hợp trên)</p></li>
+										<li><p>Nếu đường dẫn bắt đầu bằng "../" thì tìm trong thư mục cha của thư mục hiện tại. Cứ mỗi dấu "../" thì lên một cấp thư mục, VD: "../../" lên 2 cấp, "../../../" lên 3 cấp, ...</p></li>
+										<li><p>Nếu đường dẫn bắt đầu bằng "/" thì tìm trong thư mục gốc. Nếu có hosting thì là domain name (hoặc 'localhost/' nếu host tại máy local), nếu không thì là thư mục gốc của ổ đĩa chứa file HTML hiện tại)</p></li>
+										<li><p>Các trường hợp trên là đường dẫn tương đối, dùng trong nội bộ trang web. Nếu đường dẫn bắt đầu bằng protocol ("http://", "https://", "file:///",...) thì là đường dẫn tuyệt đối. Khi muốn trỏ tới một trang bên ngoài (google.com, facebook.com,...) thì phải dùng đường dẫn tuyệt đối</p></li>
+									</ul>
+									<p>VD cho cấu trúc thư mục như sau:</p>		
+									<ul>
+										<li>mysite.com(thư mục gốc)</li>
+										<ul>
+											<li>admin</li>
+												<ul>
+													<li>admin.html</li>
+												</ul>
+											<li>img</li>
+												<ul>
+													<li>logo.jpg</li>
+												</ul>
+											<li>index.html</li>
+										</ul>
+									</ul>
+									<p>Từ file index.html muốn liên kết tới file logo.jpg có thể có các cách sau:</p>
+									<ul>
+										<li>img/logo.jpg</li>
+										<li>./img/logo.jpg</li>
+										<li>/img/logo.jpg</li>
+										<li>http://mysite.com/img/logo.jpg</li>
+									</ul>
+									<p>Từ file admin.html muốn liên kết tới file logo.jpg có thể có các cách sau:</p>
+									<ul>
+										<li>./../img/logo.jpg</li>
+										<li>../img/logo.jpg</li>
+										<li>/img/logo.jpg</li>
+										<li>http://mysite.com/img/logo.jpg</li>
+									</ul>
+								</li>
+							</ul>
+						</li>	
+					</ul>	
+				</div><!-- /.container-fluid -->
+				
+			</div>
+			<!-- /.content -->
+			<a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button" aria-label="Scroll to top">
+	<i class="fas fa-chevron-up"></i>
+</a>
+		</div>
+	<!-- /.content-wrapper -->
+	<!-- Main Footer -->
+	<footer class="main-footer">
+	<!-- To the right -->
+	<div class="float-right d-none d-sm-inline">
+		Khoa Công nghệ thông tin - Trường Cao đẳng kỹ thuật Cao Thắng
+	</div>
+	<!-- Default to the left -->
+	<strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+	</footer>
+	</div>
+	<!-- ./wrapper -->
+	<template id="card-code">
+		<div class="card card-success m-0 card-code">
+			<div class="card-header py-1 px-3">
+				<h3 class="card-title text-uppercase font-weight-bold">Title</h3>
+				<div class="card-tools">
+					<button type="button" class="btn-apply btn btn-tool" title="Aplly"><i class="fas fa-check"></i></button>
+					<button type="button" class="btn-copy btn btn-tool" title="Copy"><i class="fas fa-copy"></i></button>
+					<button type="button" class="btn-reset btn btn-tool" title="Reset"><i class="fas fa-sync-alt"></i></button>
+					<button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i></button>
+					<button type="button" class="btn btn-tool" data-card-widget="collapse" data-animation-speed="150"><i class="fas fa-minus"></i></button>
+				</div>
+				<!-- /.card-tools -->
+			</div>
+			<!-- /.card-header -->
+			<div class="card-body p-0">
+			</div>
+			<!-- /.card-body -->
+		</div>
+	</template>
+	<template id="card-text">
+		<div class="card card-primary m-0 card-text">
+			<div class="card-header py-1 px-3">
+				<h3 class="card-title font-weight-bold">Title</h3>
+				<div class="card-tools">
+					<button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fas fa-expand"></i></button>
+					<button type="button" class="btn btn-tool" data-card-widget="collapse" data-animation-speed="150"><i class="fas fa-minus"></i></button>
+				</div>
+				<!-- /.card-tools -->
+			</div>
+			<!-- /.card-header -->
+			<div class="card-body">
+			</div>
+			<!-- /.card-body -->
+		</div>
+	</template>
+	<!-- REQUIRED SCRIPTS -->
+	<!-- jQuery -->
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<!-- jQuery UI-->
+	<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+	<!-- Bootstrap 4 -->
+	<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- AdminLTE App -->
+	<script src="dist/js/adminlte.min.js"></script>
+	<!-- CodeMirror -->
+	<script src="plugins/codemirror/codemirror.js"></script>
+	<script src="plugins/codemirror/addon/fold/foldcode.js"></script>
+	<script src="plugins/codemirror/addon/fold/foldgutter.js"></script>
+	<script src="plugins/codemirror/addon/fold/brace-fold.js"></script>
+	<script src="plugins/codemirror/addon/fold/xml-fold.js"></script>
+	<script src="plugins/codemirror/addon/fold/indent-fold.js"></script>
+	<script src="plugins/codemirror/addon/fold/markdown-fold.js"></script>
+	<script src="plugins/codemirror/addon/fold/comment-fold.js"></script>
+	<script src="plugins/codemirror/addon/edit/matchbrackets.js"></script>
+	<script src="plugins/codemirror/addon/edit/closebrackets.js"></script>
+	<script src="plugins/codemirror/addon/edit/matchtags.js"></script>
+	<script src="plugins/codemirror/addon/edit/closetag.js"></script>
+	<script src="plugins/codemirror/mode/css/css.js"></script>
+	<script src="plugins/codemirror/mode/javascript/javascript.js"></script>
+	<script src="plugins/codemirror/mode/xml/xml.js"></script>
+	<script src="plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+	<!-- Custom JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>	
